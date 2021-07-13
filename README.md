@@ -63,4 +63,4 @@ Remarkably or rather unremarkably given my affection for cooking and travelling,
 
 With the above insights, it already begins to describe the kind of person that I am. With more time and further analysis (time of day viewing, what combination of things will I watch in roughly the same period of time), we could peer deeper into my mind. Sadly, the records do not include genre information for each entry and unless I manually added genre information to the records obtained through third party services, there won't be any. The use of third party services may end up spoiling the data in the process (a third party service may classify a show as something that Netflix would not classify it as).
 
-> Code used for this data analysis can be found [here]().
+> Code used for this data analysis can be found [here](https://github.com/JonathanBNZZ/Personal-Netflix-Data-Analysis).
