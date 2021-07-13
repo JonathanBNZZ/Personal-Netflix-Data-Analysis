@@ -53,7 +53,7 @@ My watching frequency by month matches the periods in which I had much more free
 
 ![Most Binged Show](./most_binged_show.png)
 
-My most watched show is **Designated Surviror** starring Kiefer Sutherland coming in at just under fifty two hours. Expected given that is the only show I would describe as a classic twenty four episode serial drama. My second most watched show and number one most watched sitcom is **Community** with under forty one hours of watchtime. Again, given the number of episodes and how I decided to watch most of them as fast as possible. This show would end up taking a chunk of my watchtime.
+My most watched show is **Designated Surviror** starring Kiefer Sutherland coming in at just under fifty two hours. Expected given that is the only show I watch that I would describe as a classic twenty four episode serial drama. My second most watched show and number one most watched sitcom is **Community** with under forty one hours of watchtime. Again, given the number of episodes and how I decided to watch most of them as fast as possible. This show would end up taking a chunk of my watchtime.
 
 Remarkably or rather unremarkably given my affection for cooking and travelling, four of the ten most watched shows are cooking and travelling shows (**Somebody Feed Phil**, **The Chef Show**, **How do you like Wednesday** and **Ugly Delicious**).
 
