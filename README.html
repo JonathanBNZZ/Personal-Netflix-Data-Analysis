@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&quot;Some Genres Have Some Effects On Some Viewers&quot;</title>
+            </style>
+                    
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+            <style>
+                    body {
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                        font-size: 14px;
+                        line-height: 1.6;
+                    }
+            </style>
+            <style>
+                .task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+            </style>
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="some-genres-have-some-effects-on-some-viewers">&quot;Some Genres Have Some Effects On Some Viewers&quot;</h1>
+            <p>A data analysis on my Netflix viewing habits.</p>
+            <h2 id="introduction">Introduction</h2>
+            <p>Streaming and video on demand services have become increasingly prevalent. I would argue more so than how prevalent television was. It is socially acceptable to &quot;binge&quot; shows and movies. And with all these shows and movies that we are watching, there has to be <em>some</em> effect on us. Wouldn't it be nice to get a glimpse of that effect?</p>
+            <p>And thanks to the sheer amount of data that Netflix keeps track of me. It is really easy to do so. Prior to this, recording the shows and movies you watched was a painstaking process of keeping notes on what you watched or rent a third-party device to record the television signal or the ambient audio in the room.</p>
+            <p>But with the need to create highly curated, extremely targeted libraries of media to stream, streaming companies are keeping track of everything we do. So with a simple data request we can get access to a rather extensive record of our media comsumption habits. Intrusive? Maybe. Helpful? Yes.</p>
+            <p>The rest of this article will explore this treasure trove of data and attempt to glean something from it.</p>
+            <h2 id="methodology">Methodology</h2>
+            <p>After retrieving the csv file with the records (information on how to accomplish this can be found elsewhere), it was necessary to clean the data to get a clear analysis of it. As the saying goes: &quot;garbage in, garbage out&quot;.</p>
+            <p>One thing that had to be dealt with was the removal of all mentions of trailers, previews and hooks from the data. <em>Trailers</em> are pretty self-explanatory as to what they are. <em>Previews</em> refer to the small clip that starts playing for a specific thing when you are browsing. Whilst <em>hooks</em> are the small clips that you can actively watch to get a glimpse of a thing.</p>
+            <p>Since we wanted to focus on the shows and movies we watched. Removing records for random things that we didn't properly watch was necessary.</p>
+            <p>Entries for shows and movies that had less than a minute of viewing time were also removed. Merely &quot;channel surfing&quot; shows and movies is not the same as watching shows and movies.</p>
+            <p>As a side note, I decided to remove quotation marks from titles. The quotation marks were originally there for titles that include commas. Since the data comes in a csv file and titles with commas would mess with the formatting. In remove the quotation marks, I also replaced the commas in the titles with the phrase &quot;(comma)&quot; as a clear distinction for the viewer.</p>
+            <h3 id="oddities-in-the-data">Oddities in the data</h3>
+            <p>Whilst cleaning the data, I came across a few curious records. For one, the movie <strong>Escape from L.A.</strong> staring Kurt Russell as Snake Plissken had the title <strong>Fuga Da Los Angeles</strong>. The Italian title for the the movie. I can't really answer as to why this is the case.</p>
+            <p>Additionally, the Netflix documentary <strong>Operation Varsity Blues: The College Admissions Scandal</strong> uses non-breaking spaces but only in its subtitle <strong>The College Admissions Scandal</strong>. I do not know if this is some internal naming scheme for Netflix as no other movie features non-breaking spaces in their subtitle.</p>
+            <h2 id="results">Results</h2>
+            <p>With that all out of the way, we can look at my findings.</p>
+            <p><em>Note: data used for this analysis comprised of viewing from the start of 2019 to the end of 2020. Data used is not included with the code for this analysis</em></p>
+            <p><img src="file:///\\wsl$\Ubuntu\home\jbzzn\github\Personal-Netflix-Data-Analysis\Days.png" alt="Total Time"></p>
+            <p>Between 2019 and 2020, I ended up watching <strong>thirty five days, six hours, fifty one minutes and nine seconds</strong> worth of Netflix. In other words over 846 hours or over 50,000 minutes of Netflix over the span of two years. With a runtime of 686 minutes, I would be able to watch the <strong>The Lord of the Rings: Extended Edition</strong> more than <strong>seventy four</strong> times. Needless to say, a lot of watching.</p>
+            <p><img src="file:///\\wsl$\Ubuntu\home\jbzzn\github\Personal-Netflix-Data-Analysis\ratio_television_movie.png" alt="Ratio of Movies to Television Show Episodes Watches on Netflix"></p>
+            <p>Within those two years, I spent the majority of my time watching television shows. Rather unsurprisingly.</p>
+            <p><img src="file:///\\wsl$\Ubuntu\home\jbzzn\github\Personal-Netflix-Data-Analysis\most_popular_day.png" alt="Most Popular day"></p>
+            <p>There is not much in the way of determing a <strong>most popular day</strong> where I used the most Netflix. The prevailing trend is how my viewing decreases throughout the week from Monday all the way to Saturday before shooting back up again on Sunday.</p>
+            <p><img src="file:///\\wsl$\Ubuntu\home\jbzzn\github\Personal-Netflix-Data-Analysis\most_popular_month.png" alt="Most Popular Month"></p>
+            <p>My watching frequency by month matches the periods in which I had much more free time. But I cannot explain the drop in veiwing for the month of June. It comes in between two of the top three months by viewing whilst being the third lowest month in viewing.</p>
+            <p><img src="file:///\\wsl$\Ubuntu\home\jbzzn\github\Personal-Netflix-Data-Analysis\most_binged_show.png" alt="Most Binged Show"></p>
+            <p>My most watched show is <strong>Designated Surviror</strong> starring Kiefer Sutherland coming in at just under fifty two hours. Expected given that is the only show I watch that I would describe as a classic twenty four episode serial drama. My second most watched show and number one most watched sitcom is <strong>Community</strong> with under forty one hours of watchtime. Again, given the number of episodes and how I decided to watch most of them as fast as possible. This show would end up taking a chunk of my watchtime.</p>
+            <p>Remarkably or rather unremarkably given my affection for cooking and travelling, four of the ten most watched shows are cooking and travelling shows (<strong>Somebody Feed Phil</strong>, <strong>The Chef Show</strong>, <strong>How do you like Wednesday</strong> and <strong>Ugly Delicious</strong>).</p>
+            <p><strong>Jeopardy!</strong> takes the number ten spot on the graph at just above fifteen hours of watchtime and the only gameshow on the graph.</p>
+            <h2 id="closing-remarks">Closing Remarks</h2>
+            <p>With the above insights, it already begins to describe the kind of person that I am. With more time and further analysis (time of day viewing, what combination of things will I watch in roughly the same period of time), we could peer deeper into my mind. Sadly, the records do not include genre information for each entry and unless I manually added genre information to the records obtained through third party services, there won't be any. The use of third party services may end up spoiling the data in the process (a third party service may classify a show as something that Netflix would not classify it as).</p>
+            <blockquote>
+            <p>Code used for this data analysis can be found <a href="https://github.com/JonathanBNZZ/Personal-Netflix-Data-Analysis">here</a>.</p>
+            </blockquote>
+        </body>
+    </html>
